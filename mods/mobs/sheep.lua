@@ -32,6 +32,7 @@ for _, col in pairs(all_colours) do
 		collisionbox = {-0.5, -1, -0.5, 0.5, 0.3, 0.5},
 		visual = "mesh",
 		mesh = "mobs_sheep.b3d",
+		visual_size = {x=1,y=-1},
 		textures = {
 			{"mobs_sheep_base.png^(mobs_sheep_wool.png^[colorize:" .. col[3] .. ")"},
 		},

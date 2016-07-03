@@ -12,6 +12,7 @@ mobs:register_mob("mobs_animal:chicken", {
 	collisionbox = {-0.3, -0.75, -0.3, 0.3, 0.1, 0.3},
 	visual = "mesh",
 	mesh = "mobs_chicken.x",
+	visual_size = {x=-1,y=1},
 	-- seems a lot of textures but this fixes the problem with the model
 	textures = {
 		{"mobs_chicken.png", "mobs_chicken.png", "mobs_chicken.png", "mobs_chicken.png",

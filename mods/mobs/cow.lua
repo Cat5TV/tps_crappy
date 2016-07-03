@@ -14,6 +14,7 @@ mobs:register_mob("mobs_animal:cow", {
 	armor = 200,
 	collisionbox = {-0.4, -0.01, -0.4, 0.4, 1, 0.4},
 	visual = "mesh",
+	visual_size = {x=1,y=-1},
 	mesh = "mobs_cow.x",
 	textures = {
 		{"mobs_cow.png"},

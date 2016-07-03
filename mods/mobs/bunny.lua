@@ -13,6 +13,7 @@ mobs:register_mob("mobs_animal:bunny", {
 	collisionbox = {-0.268, -0.5, -0.268,  0.268, 0.167, 0.268},
 	visual = "mesh",
 	mesh = "mobs_bunny.b3d",
+	visual_size = {x=-1,y=-1},
 	drawtype = "front",
 	textures = {
 		{"mobs_bunny_grey.png"},

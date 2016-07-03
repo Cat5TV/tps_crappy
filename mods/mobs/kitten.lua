@@ -11,7 +11,7 @@ mobs:register_mob("mobs_animal:kitten", {
 	armor = 200,
 	collisionbox = {-0.3, -0.3, -0.3, 0.3, 0.1, 0.3},
 	visual = "mesh",
-	visual_size = {x = 0.5, y = 0.5},
+	visual_size = {x = -0.5, y = 0.5},
 	mesh = "mobs_kitten.b3d",
 	textures = {
 		{"mobs_kitten_striped.png"},
