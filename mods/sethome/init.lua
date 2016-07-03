@@ -36,7 +36,20 @@ minetest.register_chatcommand("home", {
             return false
         end
         if homepos[player:get_player_name()] then
-            player:setpos(homepos[player:get_player_name()])
+			p = homepos[player:get_player_name()]
+            player:setpos({x=p.x+2, y=p.y, z=p.z})
+            minetest.after(0.4, function()
+				player:setpos({x=p.x, y=p.y, z=p.z+2})
+			end)
+			minetest.after(0.8, function()
+				player:setpos({x=p.x-2, y=p.y, z=p.z})
+			end)
+            minetest.after(1.2, function()
+				player:setpos({x=p.x, y=p.y, z=p.z-2})
+			end)
+			minetest.after(1.6, function()
+				player:setpos(p)
+			end)
             minetest.chat_send_player(name, "Teleported to home!")
         else
             minetest.chat_send_player(name, "Set a home using /sethome")
