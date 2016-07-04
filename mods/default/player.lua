@@ -16,7 +16,7 @@ end
 
 -- Default player appearance
 default.player_register_model("character.b3d", {
-	animation_speed = 30,
+	animation_speed = 10,
 	textures = {"character.png", },
 	animations = {
 		-- Standard animations.
@@ -88,20 +88,23 @@ function default.player_set_animation(player, anim_name, speed)
 	local anim = model.animations[anim_name]
 	player_anim[name] = anim_name
 	player:set_animation(anim, speed or model.animation_speed, animation_blend)
+	player:set_sky({r=180, g=3, b=248} , "plain", {""})
 end
 
 -- Update appearance when the player joins
 minetest.register_on_joinplayer(function(player)
 	default.player_attached[player:get_player_name()] = false
 	default.player_set_model(player, "character.b3d")
-	player:set_local_animation({x=0, y=79}, {x=168, y=187}, {x=189, y=198}, {x=200, y=219}, 30)
+	player:set_local_animation({x=0, y=79}, {x=168, y=187}, {x=189, y=198}, {x=200, y=219}, 10)
 	
 	-- set GUI
 	if not minetest.setting_getbool("creative_mode") then
 		player:set_inventory_formspec(default.gui_survival_form)
 	end
+	local rand = math.random(4,8)
 	player:hud_set_hotbar_image("gui_hotbar.png")
 	player:hud_set_hotbar_selected_image("gui_hotbar_selected.png")
+	player:hud_set_hotbar_itemcount(rand)
 end)
 
 minetest.register_on_leaveplayer(function(player)
@@ -124,7 +127,7 @@ minetest.register_globalstep(function(dtime)
 		if model and not player_attached[name] then
 			local controls = player:get_player_control()
 			local walking = false
-			local animation_speed_mod = model.animation_speed or 30
+			local animation_speed_mod = model.animation_speed or 10
 
 			-- Determine if the player is walking
 			if controls.up or controls.down or controls.left or controls.right then
@@ -133,7 +136,7 @@ minetest.register_globalstep(function(dtime)
 
 			-- Determine if the player is sneaking, and reduce animation speed if so
 			if controls.sneak then
-				animation_speed_mod = animation_speed_mod / 2
+				animation_speed_mod = animation_speed_mod / 4
 			end
 
 			-- Apply animations based on what the player is doing
