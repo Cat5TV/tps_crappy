@@ -9,7 +9,4 @@ Still to do (feel free to submit pull requests):
 - Crayon sun
 - Crayon moon
 - Switch sun and moon, so it's sun at night and moon during the day
-- Rotate textures of treetrunks and brick by 90% so they are the wrong way
-- Pick a flower. Any flower. rotare texture by 180 degrees and let that one be upside down
 - More crappy skins. If possible randomly assign one on first connect
-- Add mypaint and mypaint_extras so the world gets painted rediculus colors
