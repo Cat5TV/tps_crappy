@@ -333,7 +333,7 @@ minetest.register_node("default:dirt", {
 minetest.register_node("default:dirt_with_grass", {
 	description = "Dirt with Grass",
 	tiles = {"default_grass.png^[colorize:#015dbb70", "default_dirt.png",
-		{name = "default_dirt.png^(default_grass_side.png^[colorize:#015dbb70)",
+		{name = "default_dirt.png^(default_grass_side.png^[transformFY^[colorize:#015dbb70)",
 			tileable_vertical = false}},
 	groups = {crumbly = 3, soil = 1},
 	drop = 'default:dirt',
@@ -345,7 +345,7 @@ minetest.register_node("default:dirt_with_grass", {
 minetest.register_node("default:dirt_with_grass_footsteps", {
 	description = "Dirt with Grass and Footsteps",
 	tiles = {"default_grass.png^default_footprint.png", "default_dirt.png",
-		{name = "default_dirt.png^default_grass_side.png",
+		{name = "default_dirt.png^default_grass_side.png^[transformFY",
 			tileable_vertical = false}},
 	groups = {crumbly = 3, soil = 1, not_in_creative_inventory = 1},
 	drop = 'default:dirt',
@@ -358,7 +358,7 @@ minetest.register_node("default:dirt_with_dry_grass", {
 	description = "Dirt with Dry Grass",
 	tiles = {"default_dry_grass.png",
 		"default_dirt.png",
-		{name = "default_dirt.png^default_dry_grass_side.png",
+		{name = "default_dirt.png^default_dry_grass_side.png^[transformFY",
 			tileable_vertical = false}},
 	groups = {crumbly = 3, soil = 1},
 	drop = 'default:dirt',
@@ -370,7 +370,7 @@ minetest.register_node("default:dirt_with_dry_grass", {
 minetest.register_node("default:dirt_with_snow", {
 	description = "Dirt with Snow",
 	tiles = {"default_snow.png", "default_dirt.png",
-		{name = "default_dirt.png^default_snow_side.png",
+		{name = "default_dirt.png^default_snow_side.png^[transformFY",
 			tileable_vertical = false}},
 	groups = {crumbly = 3, soil = 1},
 	drop = 'default:dirt',
@@ -1243,7 +1243,7 @@ minetest.register_node("default:river_water_source", {
 	liquid_viscosity = 1,
 	liquid_renewable = false,
 	liquid_range = 2,
-	post_effect_color = {a = 103, r = 30, g = 76, b = 90},
+	post_effect_color = {a = 103, r = 77, g = 193, b = 68},
 	groups = {water = 3, liquid = 3, puts_out_fire = 1},
 })
 
@@ -1289,7 +1289,7 @@ minetest.register_node("default:river_water_flowing", {
 	liquid_viscosity = 1,
 	liquid_renewable = false,
 	liquid_range = 2,
-	post_effect_color = {a = 103, r = 30, g = 76, b = 90},
+	post_effect_color = {a = 103, r = 77, g = 193, b = 68},
 	groups = {water = 3, liquid = 3, puts_out_fire = 1,
 		not_in_creative_inventory = 1},
 })
