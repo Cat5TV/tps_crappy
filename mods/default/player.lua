@@ -88,7 +88,6 @@ function default.player_set_animation(player, anim_name, speed)
 	local anim = model.animations[anim_name]
 	player_anim[name] = anim_name
 	player:set_animation(anim, speed or model.animation_speed, animation_blend)
-	player:set_sky({r=180, g=3, b=248} , "plain", {""})
 end
 
 -- Update appearance when the player joins
