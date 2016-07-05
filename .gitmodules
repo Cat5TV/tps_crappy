@@ -1,3 +1,12 @@
 [submodule "mods/cutepie"]
 	path = mods/cutepie
 	url = https://github.com/DonBatman/cutepie
+[submodule "mods/mobs_redo"]
+	path = mods/mobs_redo
+	url = https://github.com/tenplus1/mobs_redo
+[submodule "mods/mypaint_extras"]
+	path = mods/mypaint_extras
+	url = https://github.com/DonBatman/mypaint_extras
+[submodule "mods/mypaint"]
+	path = mods/mypaint
+	url = https://github.com/DonBatman/mypaint
