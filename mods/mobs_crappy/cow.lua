@@ -12,7 +12,7 @@ mobs:register_mob("mobs_crappy:cow", {
 	hp_min = 5,
 	hp_max = 20,
 	armor = 200,
-	collisionbox = {-0.4, -0.01, -0.4, 0.4, 1, 0.4},
+	collisionbox = {-0.4, -1.5, -0.4, 0.4, 0.0, 0.4},
 	visual = "mesh",
 	visual_size = {x=1,y=-1},
 	mesh = "mobs_cow.x",
