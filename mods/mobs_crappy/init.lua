@@ -18,5 +18,6 @@ dofile(path .. "/sheep.lua") -- PilzAdam
 dofile(path .. "/bunny.lua") -- ExeterDad
 dofile(path .. "/kitten.lua") -- Jordach/BFD
 dofile(path .. "/goat.lua") -- NathanS21/DonBatman
+dofile(path .. "/elephant.lua") -- Thanks to TenPlus1 for putting this together from dmobs for me
 
 print (S("[MOD] Mobs Redo 'Animals' loaded"))
