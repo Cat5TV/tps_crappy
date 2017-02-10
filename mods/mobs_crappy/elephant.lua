@@ -134,6 +134,6 @@ mobs:register_mob("mobs_crappy:elephant", {
 	end
 })
 
-mobs:register_spawn("mobs_crappy:elephant", {"default:dirt_with_dry_grass","default:desert_sand","default:dirt_with_grass", "ethereal:prairie_dirt"}, 20, 10, 15000, 2, 31000)
+mobs:register_spawn("mobs_crappy:elephant", {"default:dirt_with_dry_grass","default:desert_sand","default:dirt_with_grass", "ethereal:prairie_dirt"}, 20, 10, 25000, 1, 150)
 
 mobs:register_egg("mobs_crappy:elephant", "Elephant", "default_dry_grass.png", 1)
