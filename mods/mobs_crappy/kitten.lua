@@ -9,9 +9,9 @@ mobs:register_mob("mobs_crappy:kitten", {
 	hp_min = 5,
 	hp_max = 10,
 	armor = 200,
-	collisionbox = {12, 12, 12, 12, 12, 12},
-	visual = "mesh",
-	visual_size = {x = 14, y = 20},
+	collisionbox = {-3, -3, -3, 3, 1, 3},
+ 	visual = "mesh",
+	visual_size = {x = -5, y = 5},
 	mesh = "mobs_kitten.b3d",
 	textures = {
 		{"mobs_kitten_striped.png"},
