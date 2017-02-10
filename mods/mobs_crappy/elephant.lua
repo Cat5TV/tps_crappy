@@ -17,13 +17,13 @@ mobs:register_mob("mobs_crappy:elephant", {
 		{"mobs_crappy_elephant.png"},
 	},
 	blood_texture = "mobs_blood.png",
-	visual_size = {x=2.5, y=2.5},
+	visual_size = {x=3.5, y=3.5},
 	makes_footstep_sound = true,
 	step_height = 1.1,
 	walk_velocity = 0.5,
-	run_velocity = 2,
-	jump = false,
-	jump_height = 0,
+	run_velocity = 8,
+	jump = true,
+	jump_height = 4,
 	water_damage = 2,
 	lava_damage = 2,
 	light_damage = 0,
@@ -134,6 +134,6 @@ mobs:register_mob("mobs_crappy:elephant", {
 	end
 })
 
-mobs:register_spawn("mobs_crappy:elephant", {"default:dirt_with_dry_grass","default:desert_sand"}, 20, 10, 15000, 2, 31000)
+mobs:register_spawn("mobs_crappy:elephant", {"default:dirt_with_dry_grass","default:desert_sand","default:dirt_with_grass", "ethereal:prairie_dirt"}, 20, 10, 15000, 2, 31000)
 
 mobs:register_egg("mobs_crappy:elephant", "Elephant", "default_dry_grass.png", 1)
