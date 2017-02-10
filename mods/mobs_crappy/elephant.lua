@@ -17,7 +17,7 @@ mobs:register_mob("mobs_crappy:elephant", {
 		{"mobs_crappy_elephant.png"},
 	},
 	blood_texture = "mobs_blood.png",
-	visual_size = {x=3.5, y=3.5},
+	visual_size = {x=8.5, y=11.5},
 	makes_footstep_sound = true,
 	step_height = 1.1,
 	walk_velocity = 0.5,
